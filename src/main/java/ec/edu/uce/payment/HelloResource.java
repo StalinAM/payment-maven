@@ -37,6 +37,7 @@ public class HelloResource {
     }
     @GET
     @Produces("text/plain")
+    @Path("/hello")
     public String hello() {
         return "Hello, World!";
     }
