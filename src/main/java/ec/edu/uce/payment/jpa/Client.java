@@ -74,4 +74,14 @@ public class Client {
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", cardNumber='" + cardNumber + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
+                '}';
+    }
 }
