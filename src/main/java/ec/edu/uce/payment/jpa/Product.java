@@ -2,6 +2,7 @@ package ec.edu.uce.payment.jpa;
 
 public class Product {
 
+
     private int id;
     private String name;
     private double price;
