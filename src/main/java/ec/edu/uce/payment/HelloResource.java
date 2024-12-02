@@ -2,16 +2,10 @@ package ec.edu.uce.payment;
 
 import ec.edu.uce.payment.jpa.Client;
 import ec.edu.uce.payment.jpa.ClientService;
-import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.POST;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.*;
 
 
 @Path("/clients")
@@ -34,6 +28,17 @@ public class HelloResource {
         clientService.createClient(client);
 
         return "listo!";
+    }
+
+    @GET
+    @Produces("text/plain")
+    @Path("/{id}")
+    public String getClient(@PathParam("id") int id) {
+
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+        ClientService clientService = new ClientService(em);
+        Client client = clientService.getClient(id);
+        return client.toString();
     }
     @GET
     @Produces("text/plain")
