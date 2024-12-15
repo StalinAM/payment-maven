@@ -55,7 +55,7 @@ GET /crud/init-data/create
   **Respuesta:**
 
   ```json
-    [Transaction {
+    Transaction {
         id: 1,
         client: { id: 1, name: "John Doe" },
         products: [
@@ -63,7 +63,7 @@ GET /crud/init-data/create
             { id: 3, name: "Café Americano", price: 8.5 }
         ],
         amount: 19.0
-    }]
+    }
   ```
 
 - **Procesar una nueva transacción:**
