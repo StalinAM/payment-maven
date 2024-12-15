@@ -5,29 +5,40 @@ import ec.edu.uce.payment.model.Client;
 import ec.edu.uce.payment.model.Product;
 import jakarta.enterprise.context.ApplicationScoped;
 
+import java.util.Set;
+
 @ApplicationScoped
 @QualifierPayment("CreditCard")
 public class CreditCard implements IPayment {
     @Override
-    public String pay(Client client, Product product) {
+    public String pay(Client client, Set<Product> products) {
+        double totalAmount = products.stream().mapToDouble(Product::getPrice).sum();
+
+        StringBuilder productDetails = new StringBuilder();
+        for (Product product : products) {
+            productDetails.append(String.format(
+                    " - Nombre: %s\n" +
+                            " - Precio: $%.2f\n",
+                    product.getName(), product.getPrice()));
+        }
+
         return String.format(
                 "¡Pago procesado exitosamente!\n" +
                         "---------------------------------\n" +
                         "Detalles del Usuario:\n" +
                         " - Nombre: %s\n" +
-                        " - Correo: %s\n" + // Incluido correo en el formato
+                        " - Correo: %s\n" +
                         "\n" +
                         "Detalles del Producto:\n" +
-                        " - Nombre: %s\n" +
-                        " - Precio: $%.2f\n" +
+                        "%s" +
                         "\n" +
                         "Detalles del Pago:\n" +
                         " - Método de Pago: Credit Card\n" +
-                        " - Monto: $%.2f\n" +
+                        " - Monto Total: $%.2f\n" +
                         "---------------------------------\n" +
                         "¡Gracias por su compra!",
-                client.getName(), client.getEmail(), // Argumentos coinciden con el formato
-                product.getName(), product.getPrice(),
-                product.getPrice());
+                client.getName(), client.getEmail(),
+                productDetails.toString(),
+                totalAmount);
     }
 }
