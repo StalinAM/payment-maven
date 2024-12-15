@@ -54,7 +54,7 @@ GET /crud/init-data/create
 
   **Respuesta:**
 
-  ```json
+  ```
     Transaction {
         id: 1,
         client: { id: 1, name: "John Doe" },
