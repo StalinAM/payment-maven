@@ -3,7 +3,6 @@ package ec.edu.uce.payment.jpa;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "clients")
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -11,20 +10,14 @@ public class Client {
 
     private String name;
     private String email;
-    private String password;
-    private String cardNumber;
-    private String accountNumber;
 
     public Client() {
     }
 
-    public Client(int id, String name, String email, String password, String cardNumber, String accountNumber) {
+    public Client(int id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.password = password;
-        this.cardNumber = cardNumber;
-        this.accountNumber = accountNumber;
     }
 
     public int getId() {
@@ -50,38 +43,9 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getCardNumber() {
-        return cardNumber;
-    }
-
-    public void setCardNumber(String cardNumber) {
-        this.cardNumber = cardNumber;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
-    }
+    @Override
     public String toString() {
-        return "Client{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", cardNumber='" + cardNumber + '\'' +
-                ", accountNumber='" + accountNumber + '\'' +
-                '}';
+        return String.format("Client {\n    id: %d,\n    name: \"%s\",\n    email: \"%s\"\n}", id, name, email);
     }
+
 }
