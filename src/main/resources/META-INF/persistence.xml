@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             version="3.0"
-             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
+             version="3.0">
 
-    <persistence-unit name="Client">
-        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <persistence-unit name="jpa" transaction-type="RESOURCE_LOCAL">
+
         <class>ec.edu.uce.payment.jpa.Client</class>
+        <class>ec.edu.uce.payment.jpa.Product</class>
+        <class>ec.edu.uce.payment.jpa.Transaction</class>
+        <class>ec.edu.uce.payment.jpa.PaymentMethod</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/paymentdb"/>
             <property name="jakarta.persistence.jdbc.user" value="postgres"/>
             <property name="jakarta.persistence.jdbc.password" value="postgres"/>
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
+            <property name="hibernate.show_sql" value="true" /> <!-- Show SQL in console -->
+            <property name="hibernate.format_sql" value="true" /> <!-- Show SQL formatted -->
         </properties>
     </persistence-unit>
 

@@ -10,7 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab12b409-5e12-4b6c-aa12-5a0491d2cef3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/CRUDResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/HelloResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/BankTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/BankTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/IPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/IPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/Paypal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/Paypal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +33,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/target/classes/ec/edu/uce/payment/jpa/ClientService.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -77,7 +94,7 @@
 }</component>
   <component name="RunManager">
     <configuration name="JBoss/WildFly 34.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 34.0.1.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="21" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/payment-1.0-SNAPSHOT/api/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/payment-1.0-SNAPSHOT/api/crud" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="payment:war exploded">
@@ -255,7 +272,15 @@
       <workItem from="1733095882869" duration="5973000" />
       <workItem from="1733184999592" duration="460000" />
       <workItem from="1733630399486" duration="924000" />
-      <workItem from="1733631358941" duration="242000" />
+      <workItem from="1733631358941" duration="673000" />
+      <workItem from="1733675568505" duration="4976000" />
+      <workItem from="1733885369332" duration="82000" />
+      <workItem from="1733885609372" duration="1838000" />
+      <workItem from="1734125733708" duration="1995000" />
+      <workItem from="1734127858881" duration="763000" />
+      <workItem from="1734128672532" duration="8182000" />
+      <workItem from="1734166964111" duration="44649000" />
+      <workItem from="1734253912703" duration="7502000" />
     </task>
     <servers />
   </component>
