@@ -2,6 +2,8 @@ package ec.edu.uce.payment.model;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
 public class Transaction {
     @Id
@@ -12,15 +14,25 @@ public class Transaction {
     @JoinColumn(name = "client_id")
     private Client client;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+    @ManyToMany
+    @JoinTable(
+            name = "transaction_product",  // Tabla intermedia
+            joinColumns = @JoinColumn(name = "transaction_id"),  // FK para la transacción
+            inverseJoinColumns = @JoinColumn(name = "product_id")  // FK para el producto
+    )
+    private Set<Product> products; // Usar Set para evitar duplicados de productos
 
-    @ManyToOne
-    @JoinColumn(name = "payment_method_id")
-    private PaymentMethod paymentMethod;
+    private double amount;  // El total de la transacción
 
-    private double amount;
+    public Transaction() {
+    }
+
+    public Transaction(int id, Client client, Set<Product> products, double amount) {
+        this.id = id;
+        this.client = client;
+        this.products = products;
+        this.amount = amount;
+    }
 
     public int getId() {
         return id;
@@ -38,22 +50,6 @@ public class Transaction {
         this.client = client;
     }
 
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
-    public PaymentMethod getPaymentMethod() {
-        return paymentMethod;
-    }
-
-    public void setPaymentMethod(PaymentMethod paymentMethod) {
-        this.paymentMethod = paymentMethod;
-    }
-
     public double getAmount() {
         return amount;
     }
@@ -62,35 +58,33 @@ public class Transaction {
         this.amount = amount;
     }
 
+    public Set<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(Set<Product> products) {
+        this.products = products;
+    }
+
     @Override
     public String toString() {
-        return String.format(
-                "Transaccion {\n" +
-                        "    id: %d,\n" +
-                        "    client: {\n" +
-                        "        id: %d,\n" +
-                        "        name: \"%s\"\n" +
-                        "    },\n" +
-                        "    product: {\n" +
-                        "        id: %d,\n" +
-                        "        name: \"%s\",\n" +
-                        "        price: %.2f\n" +
-                        "    },\n" +
-                        "    paymentMethod: {\n" +
-                        "        id: %d,\n" +
-                        "        name: \"%s\"\n" +
-                        "    },\n" +
-                        "    amount: %.2f\n" +
-                        "}",
-                id,
-                client.getId(),
-                client.getName(),
-                product.getId(),
-                product.getName(),
-                product.getPrice(),
-                paymentMethod.getId(),
-                paymentMethod.getName(),
-                amount
-        );
+        StringBuilder sb = new StringBuilder();
+        sb.append("Transaction {\n")
+                .append("    id: ").append(id).append(",\n")
+                .append("    client: { id: ").append(client.getId()).append(", name: \"").append(client.getName()).append("\" },\n")
+                .append("    products: [");
+
+        // Añadir los productos de la transacción
+        for (Product product : products) {
+            sb.append("\n        { id: ").append(product.getId())
+                    .append(", name: \"").append(product.getName())
+                    .append("\", price: ").append(product.getPrice())
+                    .append(" }");
+        }
+
+        sb.append("\n    ],\n")
+                .append("    amount: ").append(amount)
+                .append("\n}");
+        return sb.toString();
     }
 }
