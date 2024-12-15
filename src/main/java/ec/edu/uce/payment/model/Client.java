@@ -20,6 +20,11 @@ public class Client {
         this.email = email;
     }
 
+    public Client(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
     public int getId() {
         return id;
     }
@@ -43,6 +48,7 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
+
     @Override
     public String toString() {
         return String.format("Client {\n    id: %d,\n    name: \"%s\",\n    email: \"%s\"\n}", id, name, email);
