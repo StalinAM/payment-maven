@@ -11,7 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ab12b409-5e12-4b6c-aa12-5a0491d2cef3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/CRUDResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/CRUDResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/TransactionResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/TransactionResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/paymentmethods/BankTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/paymentmethods/BankTransfer.java" afterDir="false" />
@@ -280,7 +282,7 @@
       <workItem from="1734166964111" duration="44649000" />
       <workItem from="1734253912703" duration="10146000" />
       <workItem from="1734267341065" duration="826000" />
-      <workItem from="1734269306612" duration="8756000" />
+      <workItem from="1734269306612" duration="13779000" />
     </task>
     <servers />
   </component>
