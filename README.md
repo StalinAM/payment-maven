@@ -69,17 +69,14 @@ GET /crud/init-data/create
 - **Procesar una nueva transacción:**
 
   ```http
-  GET /transaction/process
-  Parámetros:
-    - clientId: ID del cliente.
-    - productIds: IDs de los productos separados por coma (ejemplo: 1,2,3).
-    - paymentMethodId: ID del método de pago.
-  ```
-
-- **Ejemplo:**
-  ```http
   GET /transaction/process?clientId=1&productIds=2,3&paymentMethodId=1
   ```
+
+  **Parámetros:**
+
+  - clientId: ID del cliente.
+  - productIds: IDs de los productos separados por coma (ejemplo: 1,2,3).
+  - paymentMethodId: ID del método de pago.
 
 ### **Clientes**
 
