@@ -1,8 +1,7 @@
 package ec.edu.uce.payment.services;
 
-import ec.edu.uce.payment.jpa.Client;
+import ec.edu.uce.payment.model.Client;
 import ec.edu.uce.payment.util.EntityManagerUtil;
-import jakarta.ejb.Stateless;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.*;
 

@@ -6,10 +6,10 @@
 
     <persistence-unit name="jpa" transaction-type="RESOURCE_LOCAL">
 
-        <class>ec.edu.uce.payment.jpa.Client</class>
-        <class>ec.edu.uce.payment.jpa.Product</class>
-        <class>ec.edu.uce.payment.jpa.Transaction</class>
-        <class>ec.edu.uce.payment.jpa.PaymentMethod</class>
+        <class>ec.edu.uce.payment.model.Client</class>
+        <class>ec.edu.uce.payment.model.Product</class>
+        <class>ec.edu.uce.payment.model.Transaction</class>
+        <class>ec.edu.uce.payment.model.PaymentMethod</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>

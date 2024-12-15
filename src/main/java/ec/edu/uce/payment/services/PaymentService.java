@@ -1,10 +1,10 @@
 package ec.edu.uce.payment.services;
 
 import ec.edu.uce.payment.annotations.QualifierPayment;
-import ec.edu.uce.payment.classes.IPayment;
-import ec.edu.uce.payment.jpa.Client;
-import ec.edu.uce.payment.jpa.PaymentMethod;
-import ec.edu.uce.payment.jpa.Product;
+import ec.edu.uce.payment.paymentmethods.IPayment;
+import ec.edu.uce.payment.model.Client;
+import ec.edu.uce.payment.model.PaymentMethod;
+import ec.edu.uce.payment.model.Product;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 

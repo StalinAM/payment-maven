@@ -1,8 +1,8 @@
 package ec.edu.uce.payment;
 
-import ec.edu.uce.payment.jpa.Client;
-import ec.edu.uce.payment.jpa.PaymentMethod;
-import ec.edu.uce.payment.jpa.Product;
+import ec.edu.uce.payment.model.Client;
+import ec.edu.uce.payment.model.PaymentMethod;
+import ec.edu.uce.payment.model.Product;
 import ec.edu.uce.payment.services.ClientService;
 import ec.edu.uce.payment.services.PaymentMethodService;
 import ec.edu.uce.payment.services.ProductService;

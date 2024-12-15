@@ -1,6 +1,6 @@
 package ec.edu.uce.payment.services;
 
-import ec.edu.uce.payment.jpa.Product;
+import ec.edu.uce.payment.model.Product;
 import ec.edu.uce.payment.util.EntityManagerUtil;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.EntityManager;

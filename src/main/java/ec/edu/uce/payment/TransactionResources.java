@@ -1,9 +1,9 @@
 package ec.edu.uce.payment;
 
-import ec.edu.uce.payment.jpa.Client;
-import ec.edu.uce.payment.jpa.PaymentMethod;
-import ec.edu.uce.payment.jpa.Product;
-import ec.edu.uce.payment.jpa.Transaction;
+import ec.edu.uce.payment.model.Client;
+import ec.edu.uce.payment.model.PaymentMethod;
+import ec.edu.uce.payment.model.Product;
+import ec.edu.uce.payment.model.Transaction;
 import ec.edu.uce.payment.services.*;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;

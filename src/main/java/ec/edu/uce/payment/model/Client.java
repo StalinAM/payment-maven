@@ -1,27 +1,23 @@
-package ec.edu.uce.payment.jpa;
+package ec.edu.uce.payment.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
-public class PaymentMethod {
+public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String name;
+    private String email;
 
-    public PaymentMethod() {
+    public Client() {
     }
 
-    public PaymentMethod(int id, String name) {
+    public Client(int id, String name, String email) {
         this.id = id;
         this.name = name;
-    }
-    public PaymentMethod(String name) {
-        this.name = name;
+        this.email = email;
     }
 
     public int getId() {
@@ -40,8 +36,16 @@ public class PaymentMethod {
         this.name = name;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
     @Override
     public String toString() {
-        return String.format("PaymentMethod {\n    id: %d,\n    name: \"%s\"\n}", id, name);
+        return String.format("Client {\n    id: %d,\n    name: \"%s\",\n    email: \"%s\"\n}", id, name, email);
     }
+
 }

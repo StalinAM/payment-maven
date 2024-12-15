@@ -10,19 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab12b409-5e12-4b6c-aa12-5a0491d2cef3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/CRUDResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/BankTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/BankTransfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/IPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/IPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/Paypal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/Paypal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/CRUDResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/CRUDResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/TransactionResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/TransactionResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/BankTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/paymentmethods/BankTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/paymentmethods/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/IPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/paymentmethods/IPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/classes/Paypal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/paymentmethods/Paypal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/PaymentMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/PaymentMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/jpa/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/PaymentMethodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/PaymentMethodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/uce/payment/services/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,7 +283,8 @@
       <workItem from="1734127858881" duration="763000" />
       <workItem from="1734128672532" duration="8182000" />
       <workItem from="1734166964111" duration="44649000" />
-      <workItem from="1734253912703" duration="7502000" />
+      <workItem from="1734253912703" duration="10146000" />
+      <workItem from="1734267341065" duration="826000" />
     </task>
     <servers />
   </component>

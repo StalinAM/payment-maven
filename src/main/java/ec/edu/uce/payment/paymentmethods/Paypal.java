@@ -1,15 +1,15 @@
-package ec.edu.uce.payment.classes;
+package ec.edu.uce.payment.paymentmethods;
 
 import ec.edu.uce.payment.annotations.QualifierPayment;
-import ec.edu.uce.payment.jpa.Client;
-import ec.edu.uce.payment.jpa.Product;
+import ec.edu.uce.payment.model.Client;
+import ec.edu.uce.payment.model.Product;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-@QualifierPayment("CreditCard")
-public class CreditCard implements IPayment {
+@QualifierPayment("Paypal")
+public class Paypal implements IPayment {
     @Override
-    public String pay(Client client, Product product) {
+    public String pay( Client client, Product product) {
         return String.format(
                 "¡Pago procesado exitosamente!\n" +
                         "---------------------------------\n" +
@@ -22,7 +22,7 @@ public class CreditCard implements IPayment {
                         " - Precio: $%.2f\n" +
                         "\n" +
                         "Detalles del Pago:\n" +
-                        " - Método de Pago: Credit Card\n" +
+                        " - Método de Pago: Paypal\n" +
                         " - Monto: $%.2f\n" +
                         "---------------------------------\n" +
                         "¡Gracias por su compra!",
