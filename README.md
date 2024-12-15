@@ -30,7 +30,6 @@ Este proyecto es un sistema de pago basado en Java y Jakarta EE, diseñado para 
 
 3. Acceder al sistema:
    - REST: `http://localhost:8080/payment-1.0-SNAPSHOT/api`
-   - WSDL (SOAP): `http://localhost:8080/sistema-pagos/soap?wsdl`
 
 ---
 
